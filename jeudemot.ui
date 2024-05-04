@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>885</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>850</width>
+    <height>885</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>850</width>
+    <height>885</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Jeu de mot V2.0</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="gb1">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>831</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(67, 161, 147);</string>
+    </property>
+    <property name="title">
+     <string>Remlire 1</string>
+    </property>
+    <widget class="QPushButton" name="bgo1">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>130</y>
+       <width>61</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(123, 130, 140);
+font: 75 italic 17pt &quot;Consolas&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>GO</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>60</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nombre de Mots :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>170</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Taille de Mots :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>260</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nombre d' attamt :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lem">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>60</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="letm">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>170</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lena">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>260</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>20</y>
+      <width>381</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 30pt &quot;Algerian&quot;;
+background-color: rgb(162, 176, 208);
+color: rgb(255, 28, 149);
+border-radius: 8px;</string>
+    </property>
+    <property name="text">
+     <string>Jeu de mot</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="res">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>770</y>
+      <width>711</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 20pt &quot;MS Shell Dlg 2&quot;;
+
+background-color: rgb(163, 163, 163);
+color: rgb(255, 11, 15);
+border-radius: 8px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>0</y>
+      <width>981</width>
+      <height>890</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(123, 132, 119);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QGroupBox" name="gb2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>420</y>
+       <width>831</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(67, 161, 147);</string>
+     </property>
+     <property name="title">
+      <string>Jouer</string>
+     </property>
+     <widget class="QLabel" name="lb5">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>50</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>donner la lettre 1 :</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bgo2">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>60</y>
+        <width>61</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(123, 130, 140);
+font: 75 italic 17pt &quot;Consolas&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>GO</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lea">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>40</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QTableWidget" name="tw">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>550</y>
+       <width>611</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>190</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>N°</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Letter</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Mot</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QGroupBox" name="gb3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>420</y>
+       <width>831</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(67, 161, 147);</string>
+     </property>
+     <property name="title">
+      <string>Jouer</string>
+     </property>
+     <widget class="QPushButton" name="bjs">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>150</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(123, 130, 140);
+font: 75 italic 17pt &quot;Consolas&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Joué</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>40</y>
+        <width>691</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 30pt &quot;Algerian&quot;;
+background-color: rgb(162, 176, 208);
+color: rgb(255, 28, 149);
+border-radius: 8px;</string>
+      </property>
+      <property name="text">
+       <string>utiliser d'anciennes données</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="res2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>830</y>
+       <width>711</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25pt &quot;Algerian&quot;;
+background-color: rgb(163, 163, 163);
+color: rgb(255, 11, 15);border-radius: 8px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="fm">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>780</y>
+      <width>120</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="brj">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(123, 130, 140);
+font: 75 italic 17pt &quot;Consolas&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>remlire</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bp">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>101</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(123, 130, 140);
+font: 75 italic 17pt &quot;Consolas&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Rejoué</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>frame</zorder>
+   <zorder>fm</zorder>
+   <zorder>gb1</zorder>
+   <zorder>label</zorder>
+   <zorder>res</zorder>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lem</tabstop>
+  <tabstop>letm</tabstop>
+  <tabstop>lena</tabstop>
+  <tabstop>bgo1</tabstop>
+  <tabstop>lea</tabstop>
+  <tabstop>bp</tabstop>
+  <tabstop>brj</tabstop>
+  <tabstop>bjs</tabstop>
+  <tabstop>tw</tabstop>
+  <tabstop>bgo2</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
